@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TavizRoghan</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
+  </head>
+  <body class="overflow-y-auto">
+    <!-- cars list -->
+    <div
+      class="flex flex-row w-full max-h-fit border-1 border-red-400 overflow-x-auto gap-5 items-center justify-between p-5 box"
+    >
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showSwit()"
+      >
+        Show Swal
+      </button>
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showToast(`success`,`هشدار موفقیت`)"
+      >
+        show Toast Success
+      </button>
+
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showToast(`info`,`هشدار اطلاعیه`)"
+      >
+        show Toast Info
+      </button>
+
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showToast(`warning`,`هشدار اعلان خطر`)"
+      >
+        show Toast warning
+      </button>
+
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showToast(`question`,`هشدار علامت سوال`)"
+      >
+        show Toast question
+      </button>
+
+      <button
+        class="bg-gray-900 px-5 py-2 text-white font-VazirCode"
+        onclick="showToast(`error`,`هشدار ناموفق`)"
+      >
+        show Toast error
+      </button>
+    </div>
+    <script src="assets/js/flashmessage.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
